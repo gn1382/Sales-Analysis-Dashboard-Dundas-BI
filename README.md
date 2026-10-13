@@ -25,7 +25,7 @@ The dashboard uses multiple **Data Cubes and Metric Sets**, dynamic filters, API
 
 ### 1. Sales KPI Overview
 
-![Sales Analysis Dashboard](/image/iSales_Analysis.png)
+![Sales Analysis Dashboard](/images/iSales_Analysis.png)
 
 Provides an overview of key sales performance indicators, including:
 
