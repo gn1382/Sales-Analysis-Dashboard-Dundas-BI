@@ -6,7 +6,7 @@ An interactive **Sales Analysis Dashboard** developed using Dundas BI to monitor
 
 This project analyzes sales data through an interactive business intelligence dashboard. It provides insights into sales quantity, total sales, daily sales performance, customer activity, and product sales distribution.
 
-The dashboard uses multiple **Data Cubes and Metric Sets**, dynamic filters, API integration, and interactive visualizations to provide a comprehensive view of sales performance.
+The dashboard uses multiple **Data Cubes and Metric Sets**, dynamic filters, API integration, user activity logging, and interactive visualizations to provide a comprehensive view of sales performance.
 
 ## Skills & Tools
 
@@ -14,18 +14,21 @@ The dashboard uses multiple **Data Cubes and Metric Sets**, dynamic filters, API
 - **Data Cubes** – Data organization and analysis
 - **Metric Sets** – Defining measures for KPIs, charts, and tables
 - **KPI Development** – Sales Quantity, Total Sales, Highest Sales Day, and Lowest Sales Day
-- **Data Visualization** – Combination charts and Pareto charts
+- **Data Visualization** – Combination charts, pie charts, and Pareto charts
 - **Dynamic Filtering** – Date range and sales amount filters
 - **API Integration** – Retrieving filtered sales data through API requests
-- **JavaScript** – Dashboard scripting and interactive functionality
-- **SQL Server** – Data source and sales data analysis
+- **JavaScript** – Dashboard scripting, interactive controls, and menu functionality
+- **SQL Server** – Data source, sales analysis, and database operations
+- **Stored Procedures** – Executing database operations for user activity logging
+- **User Activity Logging** – Recording user activity in the database
+- **Dashboard Navigation** – Interactive menu and dashboard navigation
 - **Report Export** – Dashboard report download functionality
 
 ## Dashboard Overview
 
 ### 1. Sales KPI Overview
 
-![Sales Analysis Dashboard](/images/iSales_Analysis.png)
+![Sales Analysis Dashboard](Sales_Analysis.png)
 
 Provides an overview of key sales performance indicators, including:
 
@@ -67,12 +70,23 @@ Allows users to filter sales data using interactive controls.
 - **Date Range Filter** – Filters dashboard data by start and end dates.
 - **Sales Range Filter** – Filters sales records based on specified sales amount boundaries.
 - **API Integration** – Sends filter parameters and retrieves filtered sales data.
+- **Data Input** – Accepts user-defined filtering criteria.
 - **Dynamic Data Table** – Displays sales details according to the selected filtering criteria.
 
-### 6. Dashboard Controls & Export
+### 6. User Activity Logging
+
+Implements database-based user activity logging using SQL Server and stored procedures.
+
+- **Stored Procedure Integration** – Executes database procedures to record user activity.
+- **User Activity Records** – Stores activity details in a database table.
+- **Dashboard Integration** – Connects dashboard interactions with the logging functionality.
+
+### 7. Dashboard Navigation & Controls
 
 Includes additional functionality to improve dashboard usability.
 
+- **Interactive Menu** – Provides menu-based navigation between dashboards.
+- **Dashboard Display** – Loads the selected dashboard into a dashboard container.
 - **Download Report** – Exports the report.
 - **Exit Button** – Provides an exit action.
 - **Live Date and Time** – Displays the current date and time.
@@ -85,9 +99,10 @@ Includes additional functionality to improve dashboard usability.
 - AdventureWorksDW2022
 - JavaScript
 - API Integration
+- Stored Procedures
 - Business Intelligence (BI)
 - Data Visualization
 
 ## Key Takeaway
 
-This project demonstrates how **Dundas BI, Data Cubes, Metric Sets, JavaScript, and API integration** can be combined to build an interactive sales analytics dashboard with dynamic filtering, KPI monitoring, and detailed sales reporting.
+This project demonstrates how **Dundas BI, Data Cubes, Metric Sets, JavaScript, SQL Server, stored procedures, and API integration** can be combined to build an interactive sales analytics dashboard featuring dynamic filtering, KPI monitoring, dashboard navigation, user activity logging, and detailed sales reporting.
